@@ -9,9 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var label:UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let test = Test_WWDC(test: "Test_WWDC")
+        
+        label.text = test.test
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
